@@ -12,20 +12,25 @@
         .navbar {
             background-color: #f8f9fa;
         }
-        .navbar-brand, .nav-link {
-            color: #212529 !important;
-        }
-        .nav-link:hover {
-            color: #e83e8c !important;
+        .nav-item-box, .navbar-brand-box {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            width: 100px;
+            height: 40px;
         }
         .box {
             background-color: #f8f9fa;
             border: 1px solid #dee2e6;
-            padding: 20px;
-            text-align: center;
+            padding: 100px; 
             margin: 15px 0;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        .nav-link, .navbar-brand {
+            padding: 0;
         }
         .mobile-links {
             display: none;
@@ -44,36 +49,36 @@
 
 <nav class="navbar navbar-expand-lg">
   <div class="container">
-    <a class="navbar-brand" href="#">Business Title</a>
+    <a class="navbar-brand" href="#"><div class="navbar-brand-box"></div></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item desktop-links">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#"><div class="nav-item-box"></div></a>
         </li>
         <li class="nav-item desktop-links">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#"><div class="nav-item-box"></div></a>
         </li>
         <li class="nav-item desktop-links">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#"><div class="nav-item-box"></div></a>
         </li>
         <li class="nav-item desktop-links">
-          <a class="nav-link" href="#">Photos</a>
+          <a class="nav-link" href="#"><div class="nav-item-box"></div></a>
         </li>
 
         <li class="nav-item mobile-links">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#"><div class="nav-item-box"></div></a>
         </li>
         <li class="nav-item mobile-links">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#"><div class="nav-item-box"></div></a>
         </li>
         <li class="nav-item mobile-links">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#"><div class="nav-item-box"></div></a>
         </li>
         <li class="nav-item mobile-links">
-          <a class="nav-link" href="#">Photos</a>
+          <a class="nav-link" href="#"><div class="nav-item-box"></div></a>
         </li>
       </ul>
     </div>
@@ -82,22 +87,28 @@
 
 <div class="container mt-4">
     <div class="row">
-        <div class="col-md-6">
-            <div class="box">Content Box 1</div>
+        <div class="col-md-4">
+            <div class="box"></div>
         </div>
-        <div class="col-md-6">
-            <div class="box">Content Box 2</div>
+        <div class="col-md-4">
+            <div class="box"></div>
+        </div>
+        <div class="col-md-4">
+            <div class="box"></div>
         </div>
     </div>
 </div>
 
 <div class="container mt-4">
     <div class="row">
-        <div class="col-md-6">
-            <div class="box">Content Box 3</div>
+        <div class="col-md-4">
+            <div class="box"></div>
         </div>
-        <div class="col-md-6">
-            <div class="box">Content Box 4</div>
+        <div class="col-md-4">
+            <div class="box"></div>
+        </div>
+        <div class="col-md-4">
+            <div class="box"></div>
         </div>
     </div>
 </div>
